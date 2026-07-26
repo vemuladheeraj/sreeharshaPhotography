@@ -1,3 +1,5 @@
+import type { PortfolioItem } from "@/types";
+
 export const SITE_CONFIG = {
   name: "Sree Harsha Photography",
   tagline: "We Don't Capture Moments. We Preserve Generations.",
@@ -203,7 +205,7 @@ export const PORTFOLIO_FILTERS = [
   "Corporate",
 ] as const;
 
-export const PORTFOLIO_ITEMS = [
+export const PORTFOLIO_ITEMS: readonly PortfolioItem[] = [
   {
     id: 1,
     category: "Wedding",
@@ -342,7 +344,7 @@ export const PORTFOLIO_ITEMS = [
     date: "November 2025",
     storySlug: "sneha-arjun-araku",
   },
-] as const;
+];
 
 export const WEDDING_STORIES = [
   {
